@@ -16,6 +16,11 @@ body{font-family:Arial; margin:0; background:#fff8e7; text-align:center;}
 .btn-red{background:#b71c1c;}
 img{width:100%; border-radius:15px; margin:10px 0;}
 video{width:100%; border-radius:15px;}
+.slider{position:relative;overflow:hidden;border-radius:15px}
+.slides{display:flex;transition:0.6s}
+.slides img{width:100%;min-width:100%;height:320px;object-fit:cover;margin:0}
+.prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:white;border:none;font-size:22px;padding:10px 14px;border-radius:50%;cursor:pointer}
+.prev{left:10px}.next{right:10px}
 </style>
 </head>
 <body>
@@ -46,6 +51,8 @@ Rajasthan 313001, India</p>
 <div class="box">
 <h2>🏨 Hotel Photos</h2>
 <p>Udaipur cha sarvat sundar palace view hotel!</p>
+<div class="slider">
+<div class="slides" id="slides">
 <img src="photo1.jpg.jpg">
 <img src="photo2.jpg.jpg">
 <img src="photo3.jpg.jpg">
@@ -53,6 +60,11 @@ Rajasthan 313001, India</p>
 <img src="photo5.jpg.jpg">
 <img src="photo6.jpg.jpg">
 <img src="photo7.jpg.jpg">
+</div>
+<button class="prev" onclick="move(-1)">❮</button>
+<button class="next" onclick="move(1)">❯</button>
+</div>
+<p style="text-align:center;color:#888">Slide kara, sagle photo bagha 👆</p>
 </div>
 
 <div class="box">
@@ -71,5 +83,13 @@ Rajasthan 313001, India</p>
 
 <p style="padding:20px;">Hotel Padharo - Udaipur © 2026</p>
 
+<script>
+let index=0;
+let slides=document.getElementById('slides');
+let total=7;
+function move(n){index=(index+n+total)%total;slides.style.transform='translateX(-'+(index*100)+'%)';}
+setInterval(()=>{move(1)},3000);
+</script>
+
 </body>
-  </html>
+</html>
