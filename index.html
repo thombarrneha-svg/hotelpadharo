@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel Padharo - Udaipur</title>
-<meta name="description" content="Hotel Padharo - Udaipur madhil best hotel, jevan, family dining, Rajasthani food">
-<meta name="keywords" content="Hotel Padharo, Hotel Padharo Udaipur, hotelpadharo udaipur, hotel in udaipur">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>Hotel Padharo - Udaipur | Luxury Stay</title>
+<meta name="description" content="Hotel Padharo - Udaipur, Lake Pichola Road. Luxury Family Stay, Rajasthani Hospitality">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',Arial;background:#FFF8E7;color:#333}
-.header{background:linear-gradient(135deg,#7A0C0C,#B71C1C);color:white;text-align:center;padding:28px 12px;border-radius:0 0 25px 25px}
+.header{background:linear-gradient(135deg,#7A0C0C,#B71C1C);color:white;text-align:center;padding:30px 12px;border-radius:0 0 25px 25px}
 .header h1{font-family:'Playfair Display',serif;font-size:36px;letter-spacing:1px}
 .header p{font-size:15px;margin-top:6px;opacity:0.95}
-.box{background:white;margin:15px;padding:20px;border-radius:20px;box-shadow:0 4px 18px rgba(0,0,0,0.08);text-align:left}
+.box{background:white;margin:15px;padding:22px;border-radius:20px;box-shadow:0 4px 18px rgba(0,0,0,0.08)}
 .box h2{font-family:'Playfair Display',serif;color:#B71C1C;font-size:24px;margin-bottom:10px}
 .box p{font-size:15px;line-height:1.7}
+.sub{color:#777;font-size:13.5px;margin-bottom:8px}
 .btn{display:block;text-align:center;background:#25D366;color:white;padding:14px;border-radius:30px;text-decoration:none;font-weight:600;margin:10px 0;font-size:16px}
 .btn-blue{background:#007BFF}
 .btn-red{background:#B71C1C}
@@ -29,12 +29,13 @@ video{width:100%;border-radius:15px;margin-top:8px}
 .dot{height:9px;width:9px;background:#DDD;display:inline-block;border-radius:50%;margin:0 4px}
 .dot.active{background:#B71C1C;width:22px;border-radius:10px}
 table{width:100%;border-collapse:collapse;margin-top:12px;font-size:14px}
-th,td{border:1px solid #eee;padding:10px;text-align:center}
+th,td{border:1px solid #eee;padding:11px;text-align:center}
 th{background:#B71C1C;color:white}
 td:first-child{text-align:left;font-weight:600}
-.late-box{background:#FFF3CD;border:1px solid #FFC107;padding:15px;border-radius:15px;margin-top:12px;line-height:1.8;font-size:14px}
-.late-box b{color:#B71C1C}
-.badge{display:inline-block;background:#FFD700;color:#000;padding:6px 12px;border-radius:20px;font-weight:600;font-size:13px;margin:4px 4px 0 0}
+.policy{background:#FFF8E1;border:1px solid #FFE082;padding:16px;border-radius:15px;margin-top:12px;line-height:1.9;font-size:14px}
+.policy b{color:#7A0C0C}
+.badge{display:inline-block;background:#FFF3CD;color:#5D4037;padding:7px 13px;border-radius:20px;font-weight:600;font-size:13px;margin:4px 4px 0 0;border:1px solid #FFE082}
+.note{background:#F9F9F9;padding:14px;border-radius:12px;margin-top:12px;font-size:13.5px;line-height:1.7;color:#555}
 .footer{text-align:center;padding:20px;color:#888;font-size:13px}
 </style>
 </head>
@@ -42,13 +43,13 @@ td:first-child{text-align:left;font-weight:600}
 
 <div class="header">
 <h1>✨ Hotel Padharo ✨</h1>
-<p>Udaipur - Lake Pichola Road</p>
-<p>Padharo Mhare Desh! 🙏</p>
+<p>Lake Pichola Road, Udaipur</p>
+<p>Padharo Mhare Desh! 🙏 | Royal Rajasthani Hospitality</p>
 </div>
 
 <div class="box">
-<h2>🏨 Hotel Photos</h2>
-<p>Udaipur cha sarvat sundar Palace View Hotel!</p>
+<h2>🏨 Gallery</h2>
+<p class="sub">Experience the Royal Charm of Udaipur</p>
 <div class="slider">
 <img class="slide active" src="photo1.jpg.jpg">
 <img class="slide" src="photo2.jpg.jpg">
@@ -61,76 +62,81 @@ td:first-child{text-align:left;font-weight:600}
 <button class="next" onclick="move(1)">❯</button>
 </div>
 <div class="dots" id="dots"></div>
-<p style="text-align:center;color:#888;margin-top:8px">👆 Slide kara, sagle photo bagha</p>
+<p style="text-align:center;color:#888;margin-top:8px;font-size:13px">Swipe to Explore</p>
 </div>
 
 <div class="box">
-<h2>🛏️ Family Room - 5 Lok</h2>
-<p><b>Family Room - 5 Lokansathi Best!</b><br>Check-In: Sakali 8:00 AM | Check-Out: Dupari 12:00 PM</p>
-<div style="margin-top:10px">
-<span class="badge">❄️ AC Available</span>
-<span class="badge">📶 Free WiFi</span>
-<span class="badge">📺 TV Available</span>
-<span class="badge">👨‍👩‍👧‍👦 5 Lok</span>
+<h2>🛏️ Deluxe Family Room</h2>
+<p class="sub">Perfect for Family - Up to 5 Guests | Spacious & Comfortable</p>
+<div>
+<span class="badge">❄️ Air Conditioned</span>
+<span class="badge">📶 High-Speed Free WiFi</span>
+<span class="badge">📺 LED TV</span>
+<span class="badge">👨‍👩‍👧‍👦 Up to 5 Guests</span>
 </div>
-<p style="margin-top:10px">✅ AC - ✅ WiFi - ✅ TV - Saglya Room Madhe Available!</p>
+<p style="margin-top:12px"><b>Check-In Time:</b> 08:00 AM<br><b>Check-Out Time:</b> 12:00 PM (Noon)</p>
+<p style="margin-top:8px;color:#555;font-size:14px">All rooms are equipped with AC, Free WiFi & LED TV for your comfort.</p>
 </div>
 
 <div class="box">
-<h2>🕒 Time Management - Family Room</h2>
+<h2>🕒 Stay Duration & Timings</h2>
+<p class="sub">Please refer to Check-In & Check-Out timings for your stay</p>
 <table>
-<tr><th>Booking</th><th>Yeto</th><th>Jato</th></tr>
-<tr><td>Half Day</td><td>Sakali 8:00</td><td>Tyach Divshi Dupari 12:00</td></tr>
-<tr><td>Full Day</td><td>Sakali 8:00</td><td>Tyach Divshi Ratri 8:00</td></tr>
-<tr><td>1 Night / 1 Day</td><td>Day 1 - Sakali 8:00</td><td>Day 2 - Dupari 12:00</td></tr>
-<tr><td>2 Day / 2 Night</td><td>Day 1 - Sakali 8:00</td><td>Day 3 - Dupari 12:00</td></tr>
-<tr><td>3 Day / 3 Night</td><td>Day 1 - Sakali 8:00</td><td>Day 4 - Dupari 12:00</td></tr>
-<tr><td>4 Day / 4 Night</td><td>Day 1 - Sakali 8:00</td><td>Day 5 - Dupari 12:00</td></tr>
-<tr><td>1 Week (7 Night)</td><td>Day 1 - Sakali 8:00</td><td>Day 8 - Dupari 12:00</td></tr>
-<tr><td>7+ Divas</td><td>Day 1 - Sakali 8:00</td><td>Shevat Divshi Dupari 12:00</td></tr>
+<tr><th>Stay Plan</th><th>Check-In</th><th>Check-Out</th></tr>
+<tr><td>Half Day</td><td>08:00 AM</td><td>12:00 PM - Same Day</td></tr>
+<tr><td>Full Day</td><td>08:00 AM</td><td>08:00 PM - Same Day</td></tr>
+<tr><td>1 Night / 1 Day</td><td>Day 1 - 08:00 AM</td><td>Day 2 - 12:00 PM</td></tr>
+<tr><td>2 Nights / 3 Days</td><td>Day 1 - 08:00 AM</td><td>Day 3 - 12:00 PM</td></tr>
+<tr><td>3 Nights / 4 Days</td><td>Day 1 - 08:00 AM</td><td>Day 4 - 12:00 PM</td></tr>
+<tr><td>4 Nights / 5 Days</td><td>Day 1 - 08:00 AM</td><td>Day 5 - 12:00 PM</td></tr>
+<tr><td>1 Week (7 Nights)</td><td>Day 1 - 08:00 AM</td><td>Day 8 - 12:00 PM</td></tr>
+<tr><td>7+ Days / Long Stay</td><td>Day 1 - 08:00 AM</td><td>Last Day - 12:00 PM</td></tr>
 </table>
 </div>
 
 <div class="box">
-<h2>💰 Price - Family Room - 5 Lok</h2>
+<h2>💰 Tariff - Deluxe Family Room (Up to 5 Guests)</h2>
+<p class="sub">All prices are for the full room, inclusive of stay for up to 5 guests</p>
 <table>
-<tr><th>Booking</th><th>Weekday<br>Mon-Fri</th><th>Weekend<br>Sat-Sun</th></tr>
-<tr><td>Half Day</td><td>₹2200</td><td>₹2800</td></tr>
-<tr><td>Full Day</td><td>₹3200</td><td>₹4000</td></tr>
-<tr><td>1 Night</td><td>₹4000</td><td>₹5000</td></tr>
-<tr><td>2 Night</td><td>₹7500</td><td>₹9500</td></tr>
-<tr><td>3 Night</td><td>₹11000</td><td>₹14000</td></tr>
-<tr><td>4 Night</td><td>₹14500</td><td>₹18500</td></tr>
-<tr><td>1 Week (7 Night)</td><td>₹24000</td><td>₹30000</td></tr>
-<tr><td>7+ Divas</td><td colspan="2">1 Night cha Price x Divas - 10% Discount</td></tr>
+<tr><th>Stay Plan</th><th>Weekday<br>Mon - Fri</th><th>Weekend<br>Sat - Sun</th></tr>
+<tr><td>Half Day</td><td>₹2,200</td><td>₹2,800</td></tr>
+<tr><td>Full Day</td><td>₹3,200</td><td>₹4,000</td></tr>
+<tr><td>1 Night</td><td>₹4,000</td><td>₹5,000</td></tr>
+<tr><td>2 Nights</td><td>₹7,500</td><td>₹9,500</td></tr>
+<tr><td>3 Nights</td><td>₹11,000</td><td>₹14,000</td></tr>
+<tr><td>4 Nights</td><td>₹14,500</td><td>₹18,500</td></tr>
+<tr><td>1 Week (7 Nights)</td><td>₹24,000</td><td>₹30,000</td></tr>
+<tr><td>7+ Days</td><td colspan="2">Per Night Tariff x No. of Days - 10% Discount</td></tr>
 </table>
-<p style="margin-top:10px;font-size:14px"><b>Udaharan:</b><br>3 Night Weekday = ₹11000<br>10 Divas rahile tar = 10 x ₹4000 = ₹40000 - 10% = <b>₹36000</b></p>
+<div class="note"><b>Example:</b><br>3 Nights (Weekday) = ₹11,000<br>10 Days Stay = 10 x ₹4,000 = ₹40,000 - 10% = <b>₹36,000</b></div>
 </div>
 
 <div class="box">
-<h2>⏰ Late Check-Out - FREE NAHI!</h2>
-<div class="late-box">
-<b>⚠️ Check-Out Dupari 12:00 - 12:01 la pan thambala tar ₹500 lagel!</b><br><br>
-<b>Dupari 12:00 - Dupari 2:00</b> = ₹500 Extra<br>
-<b>Dupari 12:00 - Sandhyakali 6:00</b> = ₹1000 Extra<br>
-<b>Dupari 12:00 - Ratri 8:00</b> = ₹1500 Extra<br>
-<b>Ratri Thambala / Purna Ratra</b> = Full 1 Night Price - ₹4000 / ₹5000<br>
-<b>Lavkar Gela tar</b> = Paisa Parat Nahi - Full Price Dyava Lagel<br>
-<b>1 Divas Vadhavaycha</b> = Room Khali Asel Tar - Extra 1 Night Price
+<h2>⏰ Late Check-Out & Extension Policy</h2>
+<p class="sub">To ensure a smooth experience for all our guests, kindly note our policy</p>
+<div class="policy">
+<b>Standard Check-Out Time is 12:00 PM (Noon).</b><br><br>
+<b>12:00 PM - 02:00 PM</b> - Late Check-Out Fee: ₹500<br>
+<b>12:00 PM - 06:00 PM</b> - Late Check-Out Fee: ₹1,000<br>
+<b>12:00 PM - 08:00 PM</b> - Late Check-Out Fee: ₹1,500<br>
+<b>After 08:00 PM / Overnight Stay</b> - One Additional Night Tariff Applicable (₹4,000 / ₹5,000)<br><br>
+<b>Early Check-Out:</b> In case of early departure, the full booked tariff is applicable. No refund will be provided.<br>
+<b>Stay Extension:</b> Extension is subject to room availability and will be charged as per per-night tariff. Kindly inform the front desk in advance.
 </div>
+<div class="note">💡 <b>Guest Note:</b> We request our guests to kindly inform the reception in advance for any late check-out or extension, so we can serve you better.</div>
 </div>
 
 <div class="box">
-<h2>📍 Hotel Location</h2>
+<h2>📍 Location</h2>
 <p><b>Hotel Padharo</b><br>Lake Pichola Road, Udaipur,<br>Rajasthan 313001, India</p>
-<a class="btn btn-blue" href="https://share.google/bDBlhWDiCAOMsA20F">📍 Google Maps Var Bagha</a>
+<a class="btn btn-blue" href="https://share.google/bDBlhWDiCAOMsA20F">📍 View on Google Maps</a>
 </div>
 
 <div class="box">
-<h2>📞 Contact</h2>
+<h2>📞 Reservations & Contact</h2>
 <p><b>Mobile:</b> +91 98765 43210<br><b>Booking:</b> +91 98765 43210<br><b>WhatsApp:</b> +91 98765 43210</p>
-<a class="btn" href="https://wa.me/919876543210?text=Namaste!%20Mala%20Hotel%20Padharo%20madhye%20booking%20karaychi%20aahe.">💬 WhatsApp Var Booking Kara</a>
-<a class="btn btn-red" href="tel:+919876543210">📞 Call Kara</a>
+<a class="btn" href="https://wa.me/919876543210?text=Namaste!%20I%20would%20like%20to%20book%20a%20room%20at%20Hotel%20Padharo%2C%20Udaipur.">💬 Book on WhatsApp</a>
+<a class="btn btn-red" href="tel:+919876543210">📞 Call for Reservation</a>
 </div>
 
 <div class="box">
@@ -139,11 +145,11 @@ td:first-child{text-align:left;font-weight:600}
 </div>
 
 <div class="box">
-<h2>✨ Suvidha</h2>
-<p>✅ AC Available - Saglya Room Madhe<br>✅ Free WiFi<br>✅ TV Available<br>✅ Lake View Rooms<br>✅ Swimming Pool<br>✅ Royal Palace Style<br>✅ Wedding & Events<br>✅ Family Stay</p>
+<h2>✨ Amenities & Facilities</h2>
+<p>✅ Air Conditioned Rooms<br>✅ High-Speed Free WiFi<br>✅ LED TV in All Rooms<br>✅ Lake View Rooms<br>✅ Swimming Pool<br>✅ Royal Palace Style Interiors<br>✅ Wedding & Event Venue<br>✅ Family Friendly Stay</p>
 </div>
 
-<p class="footer">Hotel Padharo - Udaipur © 2026 ❤️</p>
+<p class="footer">Hotel Padharo - Udaipur © 2026 | Padharo Mhare Desh ❤️</p>
 
 <script>
 let index = 0;
